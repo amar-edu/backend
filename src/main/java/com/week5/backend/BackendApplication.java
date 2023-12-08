@@ -34,7 +34,7 @@ class FormController {
     studRepository.save(studentData);
   }
 
-  @GetMapping("/getStudents")
+  @GetMapping("/")
   public List<Students> getDataFromDatabase() {
     List<Students> formDataList = (List<Students>) studRepository.findAll();
     return formDataList;
